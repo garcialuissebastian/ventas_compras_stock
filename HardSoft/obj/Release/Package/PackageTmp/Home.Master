@@ -1,0 +1,297 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="HardSoft.Home" %>
+
+<%@ Register Src="~/App/UsrCtrl/Ingreso.ascx" TagPrefix="uc1" TagName="Ingreso" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+       <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Hard & Soft</title>
+      <link href="css/estilo.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/animate.min.css" rel="stylesheet"/>
+    <link href="css/owl.carousel.css" rel="stylesheet"/>
+    <link href="css/owl.transitions.css" rel="stylesheet"/>
+    <link href="css/prettyPhoto.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <link href="css/responsive.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="images/ico/favicon.ico"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png"/>
+
+
+
+
+</head>
+
+<body id="home" class="homepage">
+
+
+    <header id="top-header" class="navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <!-- /responsive nav button -->
+                    
+                    <!-- logo -->
+                    <div class="navbar-brand">
+                        <a class="smooth-scroll" data-section="#home" href="/" >
+                            <img src="images/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <!-- /logo -->
+                </div>
+
+                <!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <div class="main-menu">
+                        <ul id="nav" class="nav navbar-nav">
+                            <li class="scroll"><a href="/" data-section="/">Inicio</a></li>
+                            <li class="scroll"><a href="/Nosotros.aspx"  >Nosotros</a></li>
+                            <li class="scroll"><a href="#features" data-section="#features">Servicios</a></li>
+                               <li class="scroll"><a href="#portfolio" data-section="FacturaElectronica.aspx">Facturación</a></li>
+                           <li class="scroll"><a href="#contact-area" data-section="#contact-area">Contacto</a></li>
+                          <li class="scroll"><a href="#"  onclick="nst()">Intranet</a></li>  
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
+                
+            </div>
+        </header>
+
+    <form id="form1" runat="server">
+    <div>
+
+        <asp:ContentPlaceHolder ID="Main" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+        <uc1:Ingreso runat="server" id="Ingreso" />
+
+
+
+    </form>
+
+
+
+       <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                 
+                    
+                   <div class="row">
+                       <div class="col-md-2">
+                    <img src="images/androidb.png" />
+                           
+                       
+                          </div> <div class="col-md-2">
+
+                                        <img src="images/ventanas.png" />
+                               </div>
+                       
+                        <div class="col-md-2">
+                        <img src="images/linux.png" />
+                        </div>
+                       
+                        <div class="col-md-2">
+                        <img src="images/sql.png" />
+                        </div>
+                       
+                       
+                        <div class="col-md-3">
+
+         <p  style="margin-top:20px; text-align:right">
+                        &copy; 2016 Hard Soft - Technology Solutions. 
+                    </p>
+
+ </div>
+                           <div class="col-md-1">
+
+        <a href="http://qr.afip.gob.ar/?qr=H1w99QOGN7bzBYz8WSxEBQ,," target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" border="0" height="64px"></a>
+ </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer><!--/#footer-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+     <script type="text/javascript">
+         //esValido('PERSONAL_ENCUESTAS');
+         //esValido('SIS_ROLES');
+         //esValido('ADMIN_TECNICO');
+         //esValido('MEMO');
+         //esValido('HACIENDA_CONTROL');
+         //esValido('NOTAS_OFI');
+         //esValido('VER_PROVEEDORES');
+         //esValido('CONSULTAR_RECIBOS');
+         //esValido('VER_CUALQUIER_RECIBO');
+
+
+
+         function pantalla() {
+
+             var v_cab = $('#Cabs').height();
+             var v_pie = $('#Pie').height();
+
+             var v_wd = $(window).height();
+
+             var v_cuerpo = $('#Cuerpo').height();
+
+             var v_sal = v_wd - v_cab - v_pie - 35;
+
+             if (v_cuerpo > v_sal) { } else {
+
+                 $('#Cuerpo').height(v_sal);
+             }
+
+         }
+
+         function nst() {
+             $("#myModal").modal();
+
+         }
+
+
+         function esValido(menu) {
+
+
+
+
+
+             $.ajax({
+                 url: "../Services/controlador_intranet.ashx?data=1&permiso=" + menu,
+                 responseType: "json",
+                 timeout: 20000,
+                 cache: true,
+                 success: function (result) {
+                     $.each(eval(result), function (i, obj) {
+
+
+                         if (obj.existe == "si") {
+                             $('#' + menu + '').css("display", "block");
+
+                         } else {
+                             $('#' + menu + '').css("display", "none");
+
+                         }
+                     })
+                 },
+                 error: function (jqXHR, textStatus, errorThrown) {
+                 }
+             });
+         }
+
+
+
+         jQuery(function ($) {
+
+             
+         
+            
+
+             $('.modal-footer button').click(function () {
+                 var button = $(this);
+
+                 if (button.attr("data-dismiss") != "modal") {
+                     var inputs = $('form input');
+                     var title = $('.modal-title');
+                     var progress = $('.progress');
+                     var progressBar = $('.progress-bar');
+
+                     inputs.attr("disabled", "disabled");
+
+                     button.hide();
+
+                     progress.show();
+
+                     progressBar.animate({ width: "100%" }, 100);
+
+                     progress.delay(1000)
+                             .fadeOut(600);
+
+                     button.text("Close")
+                             .removeClass("btn-primary")
+                             .addClass("btn-success")
+                             .blur()
+                             .delay(1600)
+                             .fadeIn(function () {
+                                 title.text("Log in is successful");
+                                 button.attr("data-dismiss", "modal");
+                             });
+                 }
+             });
+
+             $('#myModal').on('hidden.bs.modal', function (e) {
+                 var inputs = $('form input');
+                 var title = $('.modal-title');
+                 var progressBar = $('.progress-bar');
+                 var button = $('.modal-footer button');
+
+                 inputs.removeAttr("disabled");
+
+                 title.text("Log in");
+
+                 progressBar.css({ "width": "0%" });
+
+                 button.removeClass("btn-success")
+                         .addClass("btn-primary")
+                         .text("Ok")
+                         .removeAttr("data-dismiss");
+
+             });
+
+
+         });
+
+         function miCuenta() {
+             var position = $('.miCuenta').position();
+             var mLeft = position.left - 30;
+             var mTop = position.top + 30;
+
+             $('#miCuenta').css({ 'left': mLeft, 'top': mTop });
+             $('#miCuenta-container').hide();
+
+             $('#miCuenta').toggle('slow', function () {
+                 $('#miCuenta-container').show();
+             });
+         }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

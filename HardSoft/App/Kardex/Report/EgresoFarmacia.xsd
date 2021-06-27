@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EgresoFarmacia" targetNamespace="http://tempuri.org/EgresoFarmacia.xsd" xmlns:mstns="http://tempuri.org/EgresoFarmacia.xsd" xmlns="http://tempuri.org/EgresoFarmacia.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="EgresoFarmacia" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="EgresoFarmacia" msprop:Generator_UserDSName="EgresoFarmacia">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EgresoFarmacia" msprop:Generator_TableClassName="EgresoFarmaciaDataTable" msprop:Generator_TableVarName="tableEgresoFarmacia" msprop:Generator_RowChangedName="EgresoFarmaciaRowChanged" msprop:Generator_TablePropName="_EgresoFarmacia" msprop:Generator_RowDeletingName="EgresoFarmaciaRowDeleting" msprop:Generator_RowChangingName="EgresoFarmaciaRowChanging" msprop:Generator_RowEvHandlerName="EgresoFarmaciaRowChangeEventHandler" msprop:Generator_RowDeletedName="EgresoFarmaciaRowDeleted" msprop:Generator_RowClassName="EgresoFarmaciaRow" msprop:Generator_UserTableName="EgresoFarmacia" msprop:Generator_RowEvArgName="EgresoFarmaciaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DEPOSITO_ORIGEN" msprop:Generator_ColumnVarNameInTable="columnDEPOSITO_ORIGEN" msprop:Generator_ColumnPropNameInRow="DEPOSITO_ORIGEN" msprop:Generator_ColumnPropNameInTable="DEPOSITO_ORIGENColumn" msprop:Generator_UserColumnName="DEPOSITO_ORIGEN" type="xs:string" minOccurs="0" />
+              <xs:element name="MOTIVO" msprop:Generator_ColumnVarNameInTable="columnMOTIVO" msprop:Generator_ColumnPropNameInRow="MOTIVO" msprop:Generator_ColumnPropNameInTable="MOTIVOColumn" msprop:Generator_UserColumnName="MOTIVO" type="xs:string" minOccurs="0" />
+              <xs:element name="DEPOSITO_DESTINO" msprop:Generator_ColumnVarNameInTable="columnDEPOSITO_DESTINO" msprop:Generator_ColumnPropNameInRow="DEPOSITO_DESTINO" msprop:Generator_ColumnPropNameInTable="DEPOSITO_DESTINOColumn" msprop:Generator_UserColumnName="DEPOSITO_DESTINO" type="xs:string" minOccurs="0" />
+              <xs:element name="REMITO" msprop:Generator_ColumnVarNameInTable="columnREMITO" msprop:Generator_ColumnPropNameInRow="REMITO" msprop:Generator_ColumnPropNameInTable="REMITOColumn" msprop:Generator_UserColumnName="REMITO" type="xs:string" minOccurs="0" />
+              <xs:element name="COMENTARIO" msprop:Generator_ColumnVarNameInTable="columnCOMENTARIO" msprop:Generator_ColumnPropNameInRow="COMENTARIO" msprop:Generator_ColumnPropNameInTable="COMENTARIOColumn" msprop:Generator_UserColumnName="COMENTARIO" type="xs:string" minOccurs="0" />
+              <xs:element name="AUD" msprop:Generator_ColumnVarNameInTable="columnAUD" msprop:Generator_ColumnPropNameInRow="AUD" msprop:Generator_ColumnPropNameInTable="AUDColumn" msprop:Generator_UserColumnName="AUD" type="xs:string" minOccurs="0" />
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Grilla" msprop:Generator_TableClassName="GrillaDataTable" msprop:Generator_TableVarName="tableGrilla" msprop:Generator_RowChangedName="GrillaRowChanged" msprop:Generator_TablePropName="Grilla" msprop:Generator_RowDeletingName="GrillaRowDeleting" msprop:Generator_RowChangingName="GrillaRowChanging" msprop:Generator_RowEvHandlerName="GrillaRowChangeEventHandler" msprop:Generator_RowDeletedName="GrillaRowDeleted" msprop:Generator_RowClassName="GrillaRow" msprop:Generator_UserTableName="Grilla" msprop:Generator_RowEvArgName="GrillaRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="INSUMO" msprop:Generator_ColumnVarNameInTable="columnINSUMO" msprop:Generator_ColumnPropNameInRow="INSUMO" msprop:Generator_ColumnPropNameInTable="INSUMOColumn" msprop:Generator_UserColumnName="INSUMO" type="xs:string" minOccurs="0" />
+              <xs:element name="LOTE" msprop:Generator_ColumnVarNameInTable="columnLOTE" msprop:Generator_ColumnPropNameInRow="LOTE" msprop:Generator_ColumnPropNameInTable="LOTEColumn" msprop:Generator_UserColumnName="LOTE" type="xs:string" minOccurs="0" />
+              <xs:element name="VTO" msprop:Generator_ColumnVarNameInTable="columnVTO" msprop:Generator_ColumnPropNameInRow="VTO" msprop:Generator_ColumnPropNameInTable="VTOColumn" msprop:Generator_UserColumnName="VTO" type="xs:string" minOccurs="0" />
+              <xs:element name="CANT" msprop:Generator_ColumnVarNameInTable="columnCANT" msprop:Generator_ColumnPropNameInRow="CANT" msprop:Generator_ColumnPropNameInTable="CANTColumn" msprop:Generator_UserColumnName="CANT" type="xs:string" minOccurs="0" />
+              <xs:element name="LABORATORIO" msprop:Generator_ColumnVarNameInTable="columnLABORATORIO" msprop:Generator_ColumnPropNameInRow="LABORATORIO" msprop:Generator_ColumnPropNameInTable="LABORATORIOColumn" msprop:Generator_UserColumnName="LABORATORIO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GrillaSinStock" msprop:Generator_TableClassName="GrillaSinStockDataTable" msprop:Generator_TableVarName="tableGrillaSinStock" msprop:Generator_TablePropName="GrillaSinStock" msprop:Generator_RowDeletingName="GrillaSinStockRowDeleting" msprop:Generator_RowChangingName="GrillaSinStockRowChanging" msprop:Generator_RowEvHandlerName="GrillaSinStockRowChangeEventHandler" msprop:Generator_RowDeletedName="GrillaSinStockRowDeleted" msprop:Generator_UserTableName="GrillaSinStock" msprop:Generator_RowChangedName="GrillaSinStockRowChanged" msprop:Generator_RowEvArgName="GrillaSinStockRowChangeEvent" msprop:Generator_RowClassName="GrillaSinStockRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ART_NOMBRE" msprop:Generator_ColumnVarNameInTable="columnART_NOMBRE" msprop:Generator_ColumnPropNameInRow="ART_NOMBRE" msprop:Generator_ColumnPropNameInTable="ART_NOMBREColumn" msprop:Generator_UserColumnName="ART_NOMBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="total" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_UserColumnName="total" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

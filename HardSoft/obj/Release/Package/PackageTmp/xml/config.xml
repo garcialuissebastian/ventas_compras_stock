@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<configuracion>
+  <certificado>
+    <DEFAULT_URLWSAAWSDL>usa la instancia del obj ws</DEFAULT_URLWSAAWSDL>
+    <DEFAULT_SERVICIO>wsfe</DEFAULT_SERVICIO>
+    <DEFAULT_CERTSIGNER>certificados\\certHomo.pfx</DEFAULT_CERTSIGNER>
+    <DEFAULT_CERTIFICADO_PASSWORD>seba</DEFAULT_CERTIFICADO_PASSWORD>
+    <CUIT>20310149919</CUIT>
+  </certificado> 
+</configuracion>

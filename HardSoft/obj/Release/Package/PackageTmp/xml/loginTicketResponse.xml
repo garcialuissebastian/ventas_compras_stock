@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<loginTicketResponse version="1">
+  <header>
+    <source>CN=wsaahomo, O=AFIP, C=AR, SERIALNUMBER=CUIT 33693450239</source>
+    <destination>C=ar, O=hardsoft l, SERIALNUMBER=CUIT 20310149919, CN=sistema facturacion</destination>
+    <uniqueId>3310451520</uniqueId>
+    <generationTime>2016-08-21T23:02:46.348-03:00</generationTime>
+    <expirationTime>2016-08-22T11:02:46.348-03:00</expirationTime>
+  </header>
+  <credentials>
+    <token>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8c3NvIHZlcnNpb249IjIuMCI+CiAgICA8aWQgdW5pcXVlX2lkPSIxNjY1NTAzNzg3IiBzcmM9IkNOPXdzYWFob21vLCBPPUFGSVAsIEM9QVIsIFNFUklBTE5VTUJFUj1DVUlUIDMzNjkzNDUwMjM5IiBnZW5fdGltZT0iMTQ3MTgzMTMwNiIgZXhwX3RpbWU9IjE0NzE4NzQ1NjYiIGRzdD0iQ049d3NmZSwgTz1BRklQLCBDPUFSIi8+CiAgICA8b3BlcmF0aW9uIHZhbHVlPSJncmFudGVkIiB0eXBlPSJsb2dpbiI+CiAgICAgICAgPGxvZ2luIHVpZD0iQz1hciwgTz1oYXJkc29mdCBsLCBTRVJJQUxOVU1CRVI9Q1VJVCAyMDMxMDE0OTkxOSwgQ049c2lzdGVtYSBmYWN0dXJhY2lvbiIgc2VydmljZT0id3NmZSIgcmVnbWV0aG9kPSIyMiIgZW50aXR5PSIzMzY5MzQ1MDIzOSIgYXV0aG1ldGhvZD0iY21zIj4KICAgICAgICAgICAgPHJlbGF0aW9ucz4KICAgICAgICAgICAgICAgIDxyZWxhdGlvbiByZWx0eXBlPSI0IiBrZXk9IjIwMzEwMTQ5OTE5Ii8+CiAgICAgICAgICAgIDwvcmVsYXRpb25zPgogICAgICAgIDwvbG9naW4+CiAgICA8L29wZXJhdGlvbj4KPC9zc28+Cgo=</token>
+    <sign>Jk+BbSk/lAE3f9A6UEQX47SrNHsBbCrxtJnCqV47Ij3x9tvID72jwX8WbdKeqZmTAUgbfbmVZils4MKSrDyepewH4zGjCSjwBB1XvniMy+hhWPDP5GUQkLaYt/Z5BMoqMfSFZU8whT42MAtwsJnBvHrxKeQM2hftpJ7I4Teg2x8=</sign>
+  </credentials>
+</loginTicketResponse>
